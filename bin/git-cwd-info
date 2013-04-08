@@ -70,11 +70,11 @@ if [[ $GIT_REPO_PATH != '' && $GIT_REPO_PATH != '~' && $GIT_REPO_PATH != "$HOME/
 
   GIT_MODE=""
   if [[ -e "$GIT_REPO_PATH/BISECT_LOG" ]]; then
-    GIT_MODE=" +bisect"
+    GIT_MODE="+bisect"
   elif [[ -e "$GIT_REPO_PATH/MERGE_HEAD" ]]; then
-    GIT_MODE=" +merge"
+    GIT_MODE="+merge"
   elif [[ -e "$GIT_REPO_PATH/rebase" || -e "$GIT_REPO_PATH/rebase-apply" || -e "$GIT_REPO_PATH/rebase-merge" || -e "$GIT_REPO_PATH/../.dotest" ]]; then
-    GIT_MODE=" +rebase"
+    GIT_MODE="+rebase"
   fi
 
   GIT_DIRTY=""
@@ -83,5 +83,5 @@ if [[ $GIT_REPO_PATH != '' && $GIT_REPO_PATH != '~' && $GIT_REPO_PATH != "$HOME/
   fi
 
   #echo " %{[90m%}$GIT_BRANCH %{[37m%}$GIT_COMMIT_ID%{[0m%}$GIT_MODE$GIT_DIRTY"
-  echo "($PROMPT_COLOR$GIT_BRANCH$STATE$NO_COLOR)"
+  echo "($PROMPT_COLOR$GIT_BRANCH$GIT_MODE$STATE$NO_COLOR)"
 fi

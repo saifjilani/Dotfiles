@@ -13,6 +13,12 @@ Now copy the theme under the `~/.dotfiles/zsh/themes/dantas.zsh-theme` to `~/.oh
 
     cp ~/.dotfiles/zsh/themes/dantas.zsh-theme ~/.oh-my-zsh/themes
 
+# Mac OS changes
+
+Enable the key repetition on hold (need to restart the Mac):
+
+    defaults write -g ApplePressAndHoldEnabled -bool false
+
 
 enjoy
 

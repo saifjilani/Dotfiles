@@ -61,4 +61,4 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 eval "$(fasd --init auto)"
 
 source ~/.dotfiles/alias.sh
-
+source ~/.dotfiles/export.sh

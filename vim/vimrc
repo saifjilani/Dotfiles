@@ -110,6 +110,12 @@ set t_Co=256 " 256 colors
 set background=dark
 colorscheme monokai
 
+" =============== Ctrlp =============================
+" 'c' - the directory of the current file.
+" 'r' - the nearest ancestor that contains one of these directories or files: .git .hg .svn .bzr _darcs
+" 'a' - like c, but only if the current working directory outside of CtrlP is not a direct ancestor of the directory of the current file. 0 or '' (empty string) - disable this feature.
+let g:ctrlp_working_path_mode = 'c'
+
 " ================ Loading Externals ================
 
 source ~/.vim/vundles.vim

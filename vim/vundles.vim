@@ -14,6 +14,7 @@ Bundle 'bufexplorer.zip'
 Bundle 'ctrlp.vim'
 Bundle 'sjl/splice.vim'
 Bundle "tomtom/tcomment_vim.git"
+Bundle "mileszs/ack.vim"
 
 "Themest://github.com/
 Bundle 'altercation/vim-colors-solarized.git'

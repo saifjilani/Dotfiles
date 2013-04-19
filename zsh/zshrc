@@ -60,5 +60,13 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 # Init the fasd
 eval "$(fasd --init auto)"
 
+# It will do a ls after a cd
+function chpwd() {
+    emulate -L zsh
+    ls
+}
+
 source ~/.dotfiles/alias.sh
 source ~/.dotfiles/export.sh
+
+

@@ -3,3 +3,5 @@ alias gca="git add --all && git commit -a"
 alias top="top -o cpu"
 alias e='subl . &'
 alias c='cd'
+alias gl="git log --graph --pretty='format:%C(yellow)%h%C(cyan)%d%Creset %s => %C(green)%an%C(white), %C(red)%ar%Creset'"
+alias gs="git status"

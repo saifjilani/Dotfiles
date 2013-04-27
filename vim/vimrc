@@ -81,6 +81,9 @@ set expandtab
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
+" Disable new commented line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " ================ Completion =======================
 
 set wildmode=list:longest
@@ -114,7 +117,7 @@ colorscheme monokai
 " 'c' - the directory of the current file.
 " 'r' - the nearest ancestor that contains one of these directories or files: .git .hg .svn .bzr _darcs
 " 'a' - like c, but only if the current working directory outside of CtrlP is not a direct ancestor of the directory of the current file. 0 or '' (empty string) - disable this feature.
-let g:ctrlp_working_path_mode = 'c'
+" let g:ctrlp_working_path_mode = 'c'
 
 " ================ Loading Externals ================
 

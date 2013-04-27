@@ -66,6 +66,12 @@ function chpwd() {
     ls
 }
 
+# Enables the edition of command lines!
+# press cltr+x cltr+e to open the editor and fix any command line errors
+autoload edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
+
 source ~/.dotfiles/alias.sh
 source ~/.dotfiles/export.sh
 

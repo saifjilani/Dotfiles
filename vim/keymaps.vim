@@ -50,3 +50,9 @@ function! RenameFile()
     endif
 endfunction
 map <leader>n :call RenameFile()<cr>
+
+"""""""""""""""""""""
+vmap > >gv
+vmap < <gv
+vmap <Tab> >gv
+vmap <S-Tab> <gv

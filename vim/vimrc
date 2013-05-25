@@ -113,6 +113,8 @@ set t_Co=256 " 256 colors
 set background=dark
 colorscheme monokai
 
+set clipboard=unnamedplus
+
 " =============== Ctrlp =============================
 " 'c' - the directory of the current file.
 " 'r' - the nearest ancestor that contains one of these directories or files: .git .hg .svn .bzr _darcs

@@ -52,11 +52,6 @@ setopt AUTO_PUSHD
 # Guild Wars 2 Application variables
 export GW2ORES_USER=homer
 
-# MySQL path (to be able to compile mysql2 gem)
-MYSQL=/usr/local/mysql/bin
-export PATH=$PATH:$MYSQL
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-
 # Init the fasd
 eval "$(fasd --init auto)"
 

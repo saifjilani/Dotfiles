@@ -14,6 +14,10 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+# Set MacBook Pro to enter Standby mode in 24h (4200 seconds = 70 min is the default)
+# (86400 seconds = 24 hours)
+sudo pmset -a standbydelay 86400
+
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
 # ===========================================================
 
@@ -118,3 +122,4 @@ defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
+

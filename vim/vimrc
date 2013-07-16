@@ -107,6 +107,10 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margin
 set sidescrolloff=15
 set sidescroll=1
 
+" ================  Mouse  ==========================
+
+set mouse=a
+
 " ================ Colors  ==========================
 
 set t_Co=256 " 256 colors

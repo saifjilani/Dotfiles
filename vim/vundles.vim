@@ -16,7 +16,6 @@ Bundle 'sjl/splice.vim'
 Bundle "tomtom/tcomment_vim.git"
 Bundle 'rking/ag.vim'
 Bundle 'Tabular'
-Bundle 'ShowMarks'
 
 "Themest://github.com/
 Bundle 'altercation/vim-colors-solarized.git'

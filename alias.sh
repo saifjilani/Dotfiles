@@ -8,3 +8,4 @@ alias gs="git status"
 alias g='git'
 alias gd="git diff"
 alias ber="bundle exec rails"
+alias vim="/usr/local/Cellar/vim/7.4.052/bin/vim"

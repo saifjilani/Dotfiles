@@ -8,3 +8,5 @@ alias gs="git status"
 alias g='git'
 alias gd="git diff"
 alias ber="bundle exec rails"
+alias ctags_build="ctags -R -f .tags"
+alias tmux="TERM=screen-256color-bce tmux"

@@ -119,6 +119,13 @@ colorscheme monokai
 
 set clipboard=unnamedplus
 
+" =============== Make Vim faster ==================
+" Make vim fast.
+set synmaxcol=300
+set ttyfast
+set ttyscroll=3
+set lazyredraw
+
 " =============== Ctrlp =============================
 " 'c' - the directory of the current file.
 " 'r' - the nearest ancestor that contains one of these directories or files: .git .hg .svn .bzr _darcs

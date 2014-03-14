@@ -18,14 +18,14 @@ if [[ $GIT_REPO_PATH != '' && $GIT_REPO_PATH != '~' && $GIT_REPO_PATH != "$HOME/
   STATE=" "
 
   #HELPERS
-  NOTHING_TO_COMMIT="# Initial commit"
-  BEHIND="# Your branch is behind"
-  AHEAD="# Your branch is ahead"
-  UNTRACKED="# Untracked files"
+  NOTHING_TO_COMMIT="Initial commit"
+  BEHIND="Your branch is behind"
+  AHEAD="Your branch is ahead"
+  UNTRACKED="Untracked files"
   DIVERGED="have diverged"
-  CHANGED="# Changed but not updated"
-  TO_BE_COMMITED="# Changes to be committed"
-  CHANGES_NOT_STAGED="# Changes not staged for commit"
+  CHANGED="Changed but not updated"
+  TO_BE_COMMITED="Changes to be committed"
+  CHANGES_NOT_STAGED="Changes not staged for commit"
 	
   GIT_BRANCH=`git symbolic-ref -q HEAD | sed 's/refs\/heads\///'`
   #GIT_COMMIT_ID=`git rev-parse --short HEAD 2>/dev/null`

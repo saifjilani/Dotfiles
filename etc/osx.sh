@@ -39,7 +39,8 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # ======
 
 # Save screenshots to the downlaods.
-defaults write com.apple.screencapture location "$HOME/Downloads/"
+mkdir $HOME/Screenshots
+defaults write com.apple.screencapture location $HOME/Screenshots/
 
 # Finder
 # ======

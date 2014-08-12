@@ -73,7 +73,5 @@
   autocrlf = false
   editor = vim
 
-[diff]
-  external = ~/bin/git_diff_wrapper
-[pager]
-  diff =
+[pull]
+  rebase = true

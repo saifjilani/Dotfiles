@@ -6,8 +6,7 @@ Clone the project:
 
 Now create symlinks to it:
 
-    ln -s ~/.dotfiles/bin ~/bin
-    ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
+    cd ~/.dotfiles && ./install.sh
 
 Now copy the theme under the `~/.dotfiles/zsh/themes/dantas.zsh-theme` to `~/.oh-my-zsh/themes`.
 

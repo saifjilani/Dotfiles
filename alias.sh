@@ -14,3 +14,4 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias bake="bundle exec rake"
 alias buby="bundle exec ruby"
 alias btest='bundle exec ruby -I.:test -e "ARGV.each{|f| require f}"'
+alias vs="cd ~/Code/Ruby/vagrant && vagrant ssh"

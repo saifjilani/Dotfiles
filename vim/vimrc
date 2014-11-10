@@ -118,6 +118,7 @@ set background=dark
 colorscheme monokai
 
 set clipboard=unnamedplus
+set cursorline
 
 " =============== Make Vim faster ==================
 " Make vim fast.

@@ -1,6 +1,5 @@
 
 # Creating the aliases
-ln -s ~/.dotfiles/bin ~/bin
 ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/githelpers ~/.githelpers

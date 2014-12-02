@@ -5,10 +5,10 @@ setopt prompt_subst
 
 # Prompt
 local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
-local git_status="$(~/bin/git-cwd-info)"
+local git_status="$(~/.dotfiles/bin/git-cwd-info)"
 
 PROMPT='
-%~ $(~/bin/git-cwd-info)
+%~ $(~/.dotfiles/bin/git-cwd-info)
 ${smiley}  %{$reset_color%}'
 
 #RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/bin/git-cwd-info)%{$reset_color%}'

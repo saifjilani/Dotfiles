@@ -1,52 +1,52 @@
 {
-	"bold_folder_labels": true,
-	"caret_style": "phase",
+  "bold_folder_labels": true,
+  "caret_style": "phase",
   "theme": "Gravity.sublime-theme",
   "color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme",
   "tab_height_short": true,
-	"drag_text": false,
-	"ensure_newline_at_eof_on_save": true,
-	"fade_fold_buttons": false,
-	"fallback_encoding": "UTF-8",
-	"file_exclude_patterns":
-	[
-		".tags",
-		".tags_sorted_by_file",
-		".gemtags",
-		".DS_Store"
-	],
-	"flatland_square_tabs": false,
-	"folder_exclude_patterns":
-	[
-		".svn",
-		".git",
-		"coverage",
-		"tmp",
-		"pkg",
-		".sass-cache",
-		"node_modules",
-		"log",
-		".vagrant",
-		"generated"
-	],
-	"font_face": "Menlo",
-	"font_size": 12.0,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Theme - Flatland",
-		"Git"
-	],
-	"indent_guide_options":
-	[
-		"draw_active"
-	],
-	"reveal-on-activate": true,
-	"show_full_path": true,
-	"show_minimap": false,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
+  "drag_text": false,
+  "ensure_newline_at_eof_on_save": true,
+  "fade_fold_buttons": false,
+  "fallback_encoding": "UTF-8",
+  "file_exclude_patterns":
+  [
+    ".tags",
+    ".tags_sorted_by_file",
+    ".gemtags",
+    ".DS_Store"
+  ],
+  "flatland_square_tabs": false,
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    "coverage",
+    "tmp",
+    "pkg",
+    ".sass-cache",
+    "node_modules",
+    "log",
+    ".vagrant",
+    "generated"
+  ],
+  "font_face": "Menlo",
+  "font_size": 12.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+    "Theme - Flatland",
+    "Git"
+  ],
+  "indent_guide_options":
+  [
+    "draw_active"
+  ],
+  "reveal-on-activate": true,
+  "show_full_path": true,
+  "show_minimap": false,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": false
 }

@@ -9,7 +9,8 @@ source ~/.dotfiles/alias.sh
 source ~/.dotfiles/export.sh
 
 # Loading RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Testing our rbenv so removing RVM load for now
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # It will enable to use cd -1, cd -2 to go back to previous folders
 setopt AUTO_PUSHD
@@ -28,3 +29,12 @@ function chpwd() {
 autoload edit-command-line
 zle -N edit-command-line
 bindkey '^X^E' edit-command-line
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# starscream env setup:
+export WORKON_HOME=~/.virtualenvs
+source $(brew --prefix)/bin/virtualenvwrapper.sh

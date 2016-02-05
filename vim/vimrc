@@ -109,7 +109,8 @@ set sidescroll=1
 
 " ================  Mouse  ==========================
 
-set mouse=a
+" No mouse support
+" set mouse=a
 
 " ================ Colors  ==========================
 

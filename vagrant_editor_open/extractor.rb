@@ -22,12 +22,7 @@ class Extractor
   end
 
   def self.get_before_and_after_click(argv)
-    if argv.count == 2
-      [argv[0], argv[1]]
-    elsif argv.count == 3
-      [argv[1], argv[2]]
-    elsif argv.count == 5
-      [argv[2], argv[3]]
-    end
+    break_index = argv.index("--a")
+    [argv[break_index - 1], argv[break_index + 1]]
   end
 end

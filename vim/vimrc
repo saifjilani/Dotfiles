@@ -138,3 +138,7 @@ set lazyredraw
 
 source ~/.vim/vundles.vim
 source ~/.vim/keymaps.vim
+
+" Fuzzyfinder  https://github.com/junegunn/fzf
+set rtp+=~/.fzf
+

@@ -1,6 +1,5 @@
 alias glog="git log --graph --pretty='format:%C(yellow)%h%C(cyan)%d%Creset %s => %C(green)%an%C(white), %C(red)%ar%Creset'"
 alias gca="git add --all && git commit -a"
-alias top="top -o cpu"
 alias e='subl .'
 alias c='cd'
 alias gl="git log --graph --pretty='format:%C(yellow)%h%C(cyan)%d%Creset %s => %C(green)%an%C(white), %C(red)%ar%Creset'"
@@ -16,3 +15,9 @@ alias buby="bundle exec ruby"
 alias btest='bundle exec ruby -I.:test -e "ARGV.each{|f| require f}"'
 alias vs="cd ~/Code/vagrant && vagrant ssh"
 alias vu="vagrant up"
+alias vs="cd ~/Code/Ruby/vagrant && vagrant ssh"
+alias bs="bundle exec spring"
+alias bst="bundle exec spring testunit"
+alias bsr="bundle exec spring rails"
+alias bsrk="bundle exec spring rake"
+alias bsrebuild="bundle && bs stop && bsr s"

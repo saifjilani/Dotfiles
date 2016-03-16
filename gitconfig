@@ -42,8 +42,11 @@
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
 
+  rebase-yolo = !git fetch && git rebase origin/master
+  clear-merges = !git branch -d `git branch --merged | grep -v '^*' | tr -d '\n'`
+
 [push]
-  default = current
+	default = current
 
 [color]
   ui = auto
@@ -76,3 +79,6 @@
 
 [pull]
   rebase = true
+	default = current
+[url "git@github.com:"]
+	insteadOf = https://github.com/

@@ -7,6 +7,7 @@ plugins=(git osx autojump)
 source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/alias.sh
 source ~/.dotfiles/export.sh
+source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Loading RVM
 # Testing our rbenv so removing RVM load for now

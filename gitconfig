@@ -33,20 +33,12 @@
   ra = !git r --all
   l = "!. ~/.githelpers && pretty_git_log"
   la = !git l --all
-  switch = !legit switch \"$@\"
-	b = !legit branches
-	sprout = !legit sprout \"$@\"
-	unpublish = !legit unpublish \"$@\"
-	harvest = !legit harvest \"$@\"
-	sync = !legit sync \"$@\"
-	publish = !legit publish \"$@\"
-	graft = !legit graft \"$@\"
 
   rebase-yolo = !git fetch && git rebase origin/master
   clear-merges = !git branch -d `git branch --merged | grep -v '^*' | tr -d '\n'`
 
 [push]
-	default = current
+	default = simple
 
 [color]
   ui = auto

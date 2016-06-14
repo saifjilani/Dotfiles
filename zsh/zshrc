@@ -10,10 +10,6 @@ source ~/.dotfiles/alias.sh
 source ~/.dotfiles/export.sh
 source ~/.dotfiles/vendor/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Loading RVM
-# Testing our rbenv so removing RVM load for now
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # It will enable to use cd -1, cd -2 to go back to previous folders
 setopt AUTO_PUSHD
 

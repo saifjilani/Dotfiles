@@ -6,6 +6,7 @@ alias gl="git log --graph --pretty='format:%C(yellow)%h%C(cyan)%d%Creset %s => %
 alias gs="git status"
 alias g='git'
 alias gd="git diff"
+alias gdd="git diff --cached"
 alias gdt="git difftool"
 alias ber="bundle exec rails"
 alias ctags_build="ctags -R -f .tags"

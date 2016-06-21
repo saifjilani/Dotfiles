@@ -38,7 +38,7 @@
   clear-merges = !git branch -d `git branch --merged | grep -v \"^*\" | tr -d \"\\n\"`
 
 [push]
-	default = simple
+  default = current
 
 [color]
   ui = auto

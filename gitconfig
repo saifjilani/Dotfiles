@@ -35,7 +35,7 @@
   la = !git l --all
 
   rebase-yolo = !git fetch && git rebase origin/master
-  clear-merges = !git branch -d `git branch --merged | grep -v '^*' | tr -d '\n'`
+  clear-merges = !git branch -d `git branch --merged | grep -v \"^*\" | tr -d \"\\n\"`
 
 [push]
 	default = simple
@@ -67,10 +67,15 @@
 
 [core]
   autocrlf = false
-  editor = vim
+#  editor = vim
+	excludesfile = ~/.gitignore
 
 [pull]
   rebase = true
 	default = current
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

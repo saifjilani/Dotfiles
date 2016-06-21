@@ -27,12 +27,20 @@ function chpwd() {
 autoload edit-command-line
 zle -N edit-command-line
 bindkey '^X^E' edit-command-line
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# commenting this out to avoid conflict with chruby used by shopify dev
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
+
+# commenting this out to avoid conflict with npm added by shopify dev
+#export NVM_DIR=~/.nvm
+#source $(brew --prefix nvm)/nvm.sh
 
 # starscream env setup:
 export WORKON_HOME=~/.virtualenvs
 source $(brew --prefix)/bin/virtualenvwrapper.sh
+
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+
+# Shopify stuff - Dont commit
+PRY=1

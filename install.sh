@@ -7,3 +7,8 @@ ln -s ~/.dotfiles/githelpers ~/.githelpers
 # Installing the theme
 cp ~/.dotfiles/zsh/themes/dantas.zsh-theme ~/.oh-my-zsh/themes
 
+cd ~/.dotfiles
+
+# Downloading submodules
+git submodule init
+git submodule update --recursive
